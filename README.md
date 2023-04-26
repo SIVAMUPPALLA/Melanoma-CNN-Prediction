@@ -8,7 +8,7 @@ In this assignment, you will build a multiclass classification model using a cus
 #### Problem statement: To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 
 
-The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
+The collection contains 2357 photos of malignant and benign oncological illnesses from the International Skin Imaging Collaboration (ISIC). using the exception of melanomas and moles, whose photos are somewhat dominating, all images were sorted according to the classification acquired using ISIC, and all subgroups were divided into the same number of images.
 The data set contains the following diseases:
 
 1. Actinic keratosis
@@ -26,27 +26,21 @@ NOTE: You don't have to use any pre-trained model using Transfer learning. All t
 
  
 
-#### Project Pipeline
-- Data Reading/Data Understanding → Defining the path for train and test images 
-- Dataset Creation→ Create train & validation dataset from the train directory with a batch size of 32. Also, make sure you resize your images to 180*180.
-- Dataset visualisation → Create a code to visualize one instance of all the nine classes present in the dataset 
-- Model Building & training : 
-    Create a CNN model, which can accurately detect 9 classes present in the dataset. While building the model rescale images to normalize pixel values between (0,1).
-- Choose an appropriate optimiser and loss function for model training
-- Train the model for ~20 epochs
-- Write your findings after the model fit, see if there is evidence of model overfit or underfit
-- Choose an appropriate data augmentation strategy to resolve underfitting/overfitting 
-**Model Building & training on the augmented data :**
-  - Create a CNN model, which can accurately detect 9 classes present in the dataset. While building the model rescale images to normalize pixel values between (0,1).
-  - Choose an appropriate optimiser and loss function for model training
-  - Train the model for ~20 epochs
-  - Write your findings after the model fit, see if the earlier issue is resolved or not?
-**Class distribution: **
-  - Examine the current class distribution in the training dataset 
-  - Which class has the least number of samples?
-  - Which classes dominate the data in terms of the proportionate number of samples?
-**Handling class imbalances:** 
-  - Rectify class imbalances present in the training dataset with Augmentor library.
+#### Data Reading/Data Understanding Project Pipeline Creating a route for training and testing photos 
+- Dataset Creation With a batch size of 32, create a train and validation dataset from the train directory. Also, make sure your photos are 180*180 in size.
+- Dataset visualisation Write code to visualise one instance of each of the dataset's nine classes. 
+- Model development and training: 
+    Create a CNN model that can properly recognise the 9 classes in the dataset. Rescale photos to normalise pixel values between (0,1) when developing the model.
+- Select a suitable optimiser and loss function for model training.
+- Run the model through 20 epochs.
+- After the model fit, write down your findings and look for indications of model overfit or underfit.
+- Select a suitable data augmentation approach to address underfitting and overfitting **Model construction and training on enhanced data:** - Create a CNN model that can properly recognise the 9 classes included in the dataset. Rescale photos to normalise pixel values between (0,1) when developing the model.
+  - Select a suitable optimiser and loss function for model training.
+  - Run the model through 20 epochs.
+  - After the model fit, write down your results and check to see if the previous issue has been rectified.
+**** Examine the current class distribution in the training dataset - Which class has the fewest number of samples?
+  - Which classes have the greatest proportion of samples in the data?
+**Handling class imbalances:** Using the Augmentor package, correct class imbalances in the training dataset.
 **Model Building & training on the rectified class imbalance data:**
   - Create a CNN model, which can accurately detect 9 classes present in the dataset. While building the model rescale images to normalize pixel values between (0,1).
   - Choose an appropriate optimiser and loss function for model training
